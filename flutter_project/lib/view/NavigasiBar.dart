@@ -43,8 +43,8 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
             label: 'Transaksi',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.directions_car),
-            label: 'Pengiriman',
+            icon: Icon(Icons.favorite),
+            label: 'Whislist',
           ),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Akun')
         ],

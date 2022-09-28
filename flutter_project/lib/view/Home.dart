@@ -84,54 +84,103 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.lightBlueAccent,
+        title: Row(
+          children: [
+            Expanded(
+              flex: 5,
+              child: Container(
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    contentPadding: EdgeInsets.symmetric(
+                      vertical: 0,
+                      horizontal: 10,
+                    ),
+                    hintText: "Search Product....",
+                    hintStyle: TextStyle(color: Colors.black54),
+                    fillColor: Colors.white54,
+                    filled: true,
+                    prefixIcon: Icon(Icons.search),
+                  ),
+                ),
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: Container(
+                //margin: EdgeInsets.only(top: 60),
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.notifications_none),
+                  color: Colors.black54,
+                ),
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: Container(
+                //margin: EdgeInsets.only(top: 60),
+                child: IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.shopping_cart_rounded),
+                    color: Colors.black54),
+              ),
+            )
+          ],
+        ),
+      ),
       backgroundColor: Colors.lightBlueAccent,
       body: SingleChildScrollView(
         padding: EdgeInsets.all(8),
         child: Column(
           children: [
-            Row(
-              children: [
-                Expanded(
-                  flex: 7,
-                  child: Container(
-                    margin: EdgeInsets.only(left: 12, top: 60),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(16),
-                        ),
-                        contentPadding: EdgeInsets.symmetric(
-                          vertical: 0,
-                          horizontal: 10,
-                        ),
-                        hintText: "Search Product....",
-                        hintStyle: TextStyle(color: Colors.black54),
-                        fillColor: Colors.white54,
-                        filled: true,
-                        prefixIcon: Icon(Icons.search),
-                      ),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    margin: EdgeInsets.only(top: 60),
-                    child: IconButton(
-                        onPressed: () {}, icon: Icon(Icons.notifications_none)),
-                  ),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    margin: EdgeInsets.only(top: 60),
-                    child: IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.shopping_cart_rounded)),
-                  ),
-                )
-              ],
-            ),
+            // Row(
+            //   children: [
+            //     Expanded(
+            //       flex: 7,
+            //       child: Container(
+            //         margin: EdgeInsets.only(left: 12, top: 60),
+            //         child: TextField(
+            //           decoration: InputDecoration(
+            //             border: OutlineInputBorder(
+            //               borderRadius: BorderRadius.circular(16),
+            //             ),
+            //             contentPadding: EdgeInsets.symmetric(
+            //               vertical: 0,
+            //               horizontal: 10,
+            //             ),
+            //             hintText: "Search Product....",
+            //             hintStyle: TextStyle(color: Colors.black54),
+            //             fillColor: Colors.white54,
+            //             filled: true,
+            //             prefixIcon: Icon(Icons.search),
+            //           ),
+            //         ),
+            //       ),
+            //     ),
+            //     Expanded(
+            //       flex: 1,
+            //       child: Container(
+            //         margin: EdgeInsets.only(top: 60),
+            //         child: IconButton(
+            //             onPressed: () {}, icon: Icon(Icons.notifications_none)),
+            //       ),
+            //     ),
+            //     Expanded(
+            //       flex: 1,
+            //       child: Container(
+            //         margin: EdgeInsets.only(top: 60),
+            //         child: IconButton(
+            //             onPressed: () {},
+            //             icon: const Icon(Icons.shopping_cart_rounded)),
+            //       ),
+            //     )
+            //   ],
+            // ),
             SizedBox(
               height: 8,
             ),
