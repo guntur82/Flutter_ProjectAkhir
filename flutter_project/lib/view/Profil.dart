@@ -156,7 +156,7 @@ class _ProfileState extends State<Profile> {
                   ],
                 ),
                 SizedBox(
-                  height: 50,
+                  height: 400,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

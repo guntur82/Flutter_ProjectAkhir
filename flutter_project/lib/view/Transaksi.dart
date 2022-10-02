@@ -108,12 +108,12 @@ class _TransaksiState extends State<Transaksi> {
                                       color: Colors.blue,
                                       fontStyle: FontStyle.italic)),
                               const SizedBox(
-                                height: 11,
+                                height: 8,
                               ),
                             ],
                           ),
                           const SizedBox(
-                            height: 10,
+                            height: 2,
                           ),
                           Text(
                             "Samsung Note 8",
@@ -121,7 +121,7 @@ class _TransaksiState extends State<Transaksi> {
                                 fontSize: 20, fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
-                            height: 4,
+                            height: 10,
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -140,14 +140,14 @@ class _TransaksiState extends State<Transaksi> {
                             ],
                           ),
                           const SizedBox(
-                            height: 4,
+                            height: 0,
                           ),
                           Text(
                             "Item   : 1",
                             style: TextStyle(fontSize: 16, color: Colors.black),
                           ),
                           SizedBox(
-                            height: 4,
+                            height: 0,
                           ),
                           Text(
                             "Total  : Rp.12.000.000",
