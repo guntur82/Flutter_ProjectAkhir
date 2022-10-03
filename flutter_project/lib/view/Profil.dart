@@ -17,8 +17,9 @@ class _ProfileState extends State<Profile> {
     return Scaffold(
         appBar: AppBar(
           title: Text("Profile"),
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.blue[100],
         ),
+        backgroundColor: Colors.blue[100],
         body: Container(
           margin: EdgeInsets.only(left: 10, right: 10),
           child: SingleChildScrollView(

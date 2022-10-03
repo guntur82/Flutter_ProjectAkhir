@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.blue[100],
         title: Row(
           children: [
             Expanded(
@@ -133,7 +133,7 @@ class _HomePageState extends State<HomePage>
           ],
         ),
       ),
-      backgroundColor: Colors.lightBlueAccent,
+      backgroundColor: Colors.blue[100],
       body: SingleChildScrollView(
         padding: EdgeInsets.all(8),
         child: Column(

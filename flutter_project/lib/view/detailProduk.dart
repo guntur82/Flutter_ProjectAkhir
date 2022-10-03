@@ -11,9 +11,8 @@ class detail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.blue[100],
         title: Row(
           children: [
             Expanded(
@@ -368,7 +367,7 @@ class detail extends StatelessWidget {
                               side: BorderSide(
                                   width: 1.5, color: Colors.yellow[400]!),
                               shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(0))),
+                                  borderRadius: BorderRadius.circular(5))),
                           onPressed: () {
                             Navigator.push(
                                 context,
@@ -385,7 +384,7 @@ class detail extends StatelessWidget {
                               primary: Colors.blue,
                               side: BorderSide(width: 1.5, color: Colors.blue),
                               shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(0))),
+                                  borderRadius: BorderRadius.circular(5))),
                           onPressed: () {
                             Navigator.push(
                                 context,

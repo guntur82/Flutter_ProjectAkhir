@@ -21,7 +21,7 @@ class _TransaksiState extends State<Transaksi> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.blue[100],
         title: Row(
           children: [
             Expanded(
@@ -69,7 +69,7 @@ class _TransaksiState extends State<Transaksi> {
           ],
         ),
       ),
-      backgroundColor: Colors.lightBlueAccent,
+      backgroundColor: Colors.blue[100],
       body: Container(
         margin: EdgeInsets.only(top: 15, left: 8, right: 8),
         child: ListView.builder(
