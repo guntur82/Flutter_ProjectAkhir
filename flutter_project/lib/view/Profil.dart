@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_project/LoginRegister/HomePage_log_res.dart';
 import 'package:flutter_project/LoginRegister/Login_page.dart';
@@ -17,7 +15,7 @@ class _ProfileState extends State<Profile> {
     return Scaffold(
         appBar: AppBar(
           title: Text("Profile"),
-          backgroundColor: Colors.blue[100],
+          backgroundColor: Colors.blue,
         ),
         backgroundColor: Colors.blue[100],
         body: Container(

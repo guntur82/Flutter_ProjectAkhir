@@ -1,10 +1,5 @@
-import 'package:flutter/gestures.dart';
-import 'package:flutter_project/LoginRegister/HomePage_log_res.dart';
 import 'package:flutter_project/LoginRegister/Login_page.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);
