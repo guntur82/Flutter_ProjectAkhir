@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project/LoginRegister/HomePage_log_res.dart';
 import 'package:flutter_project/LoginRegister/Login_page.dart';
+import 'package:flutter_project/view/DetailProfil.dart';
+import 'package:flutter_project/view/history.dart';
 
 class Profile extends StatefulWidget {
   const Profile({Key? key}) : super(key: key);
@@ -15,7 +17,7 @@ class _ProfileState extends State<Profile> {
     return Scaffold(
         appBar: AppBar(
           title: Text("Profile"),
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.blue[100],
         ),
         backgroundColor: Colors.blue[100],
         body: Container(
@@ -75,7 +77,12 @@ class _ProfileState extends State<Profile> {
                               borderRadius: BorderRadius.circular(32),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DetailProfil()));
+                          },
                           child: Text("  >  ")),
                     ),
                   ],
@@ -94,7 +101,7 @@ class _ProfileState extends State<Profile> {
                         "History Pemesanan",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 20,
+                          fontSize: 18,
                         ),
                       ),
                     ),
@@ -112,7 +119,12 @@ class _ProfileState extends State<Profile> {
                               borderRadius: BorderRadius.circular(32),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => history()));
+                          },
                           child: Text("  >  ")),
                     ),
                   ],
@@ -131,7 +143,7 @@ class _ProfileState extends State<Profile> {
                         "Progres Pemesanan",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 20,
+                          fontSize: 18,
                         ),
                       ),
                     ),
@@ -155,7 +167,7 @@ class _ProfileState extends State<Profile> {
                   ],
                 ),
                 SizedBox(
-                  height: 400,
+                  height: 60,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
